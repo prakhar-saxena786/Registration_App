@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#d3d3d3"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tv_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Entries"
+        android:textSize="25sp"
+        android:layout_margin="10sp"
+        android:textColor="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_entry" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30sp"
+        android:layout_marginBottom="30sp"
+        android:src="@drawable/ic_baseline_add_24" />
+
+    <LinearLayout
+        android:id="@+id/lay_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20sp">
+
+        <EditText
+            android:id="@+id/et_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/et_add_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number" />
+
+        <EditText
+            android:id="@+id/et_add_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15sp"
+            android:text="Submit" />
+    </LinearLayout>
+
+
+</RelativeLayout>

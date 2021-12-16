@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="20sp"
+        android:fontFamily="@font/rc_bold"
+        android:text="Sign In"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#d3d3d3"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/rc_bold"
+        android:layout_marginLeft="20sp"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:id="@+id/lay_sign_in"
+        android:gravity="center"
+        android:layout_margin="30sp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bag_text"
+            android:hint="Name"
+            android:padding="10sp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bag_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:gravity="end"
+            android:textSize="15sp"
+            android:textColor="@color/blue"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_color"
+            android:text="Sign In"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:padding="10sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_sign_up"
+        android:gravity="center"
+        android:layout_margin="30sp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/SIgnUP_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bag_text"
+            android:hint="Name"
+            android:padding="10sp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/SignUP_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bag_text"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/SIgnUP_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bag_text"
+            android:hint="Email"
+            android:layout_marginTop="10sp"
+            android:padding="10sp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/SignUP_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bag_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/SignUP_verify_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bag_text"
+            android:hint="Verify Password"
+            android:inputType="textPassword"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_color"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:padding="10sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
